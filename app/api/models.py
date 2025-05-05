@@ -1,5 +1,6 @@
 from django.db import models
 from .exam_models import Chat
+from .product_models import Product, CartItem, Payment
 
 
 class Contact(models.Model):
