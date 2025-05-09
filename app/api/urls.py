@@ -1,6 +1,8 @@
 from django.urls import path
 from .views import HelloWorld, Students, submit, index , ContactListView, ContactUpdateDetailView
 from .exam_views import ChatView
+from django.conf import settings
+from django.conf.urls.static import static
 urlpatterns =  [
     path('hello/', HelloWorld.as_view(), name= 'hello_world'),
     path('students/', Students.as_view(), name= 'list_students'),
